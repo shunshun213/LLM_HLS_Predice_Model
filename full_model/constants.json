@@ -1,0 +1,103 @@
+{
+ "copy_in|Expression|LUT": {
+  "one": 118.56282160656984,
+  "wide_inner": 4.912163175434692,
+  "wide_outer": 4.849851240824846,
+  "banks": 0.7613934523333205,
+  "shl_merge_bits": 1.5769171892036105
+ },
+ "copy_in|Expression|FF": {},
+ "copy_in|Multiplexer|LUT": {
+  "one": 72.04266658332931
+ },
+ "copy_in|Register|FF": {
+  "one": 40.82852056787486,
+  "depth_x_32": 0.7974891696874418,
+  "wide_inner": 0.6873663454360924,
+  "wide_bits_x_depth": 0.24619460740708193,
+  "banks": 1.290804578967695,
+  "shl_reg_bits": 1.0
+ },
+ "copy_in|Register|LUT": {},
+ "copy_out|Expression|LUT": {
+  "one": 120.0095706288261,
+  "wide_inner": 1.340450150202738,
+  "wide_outer": 4.119183123181284,
+  "banks": 0.22026338186204159
+ },
+ "copy_out|Multiplexer|LUT": {
+  "one": 71.99651509883796
+ },
+ "copy_out|Register|FF": {
+  "one": 41.642983945780934,
+  "depth_x_32": 0.9922032195039459,
+  "wide_bits_x_depth": 0.3246598192296119,
+  "banks": 1.3565671644401778
+ },
+ "copy_out|Register|LUT": {},
+ "compute|Expression|LUT": {
+  "one": 25.04656399913345,
+  "cnt_bits": 7.068303647856848,
+  "addr_ops": 0.7722690087939283,
+  "addr_partial": 7.433107518595439,
+  "dyn_read_pc": 11.625429545511937,
+  "dyn_read_wide": 1.0657808841969518,
+  "dyn_write_bits": 2.1323243276463186,
+  "dyn_hoist_bits": 3.0060563993719756,
+  "shl_merge_bits": 2.3914523456346335
+ },
+ "compute|Expression|FF": {},
+ "compute|Multiplexer|LUT": {
+  "one": 120.5381489018483,
+  "mux_ii": 0.5671135556400482,
+  "banks_sel": 3.003505499027192,
+  "II_states": 3.8337445558588503
+ },
+ "compute|Register|FF": {
+  "cnt_bits": 2.8106880697067322,
+  "depth_ov": 19.196864699438926,
+  "depth_ov_ext": 3.558972701910557,
+  "chain_wait": 0.9891624331384072,
+  "early_ops": 0.38008228950557355,
+  "core_regs_shared": 1.3916259828749797,
+  "P32_partial": 1.360541783050315,
+  "shl_reg_bits": 1.0,
+  "stages": 1.0
+ },
+ "compute|Register|LUT": {
+  "sum_live": 0.4117024304988972
+ },
+ "top|Expression|LUT": {
+  "n_loops": 52.454218065222506,
+  "body_P": 13.802183410650704,
+  "hoist_seq": 10.607044382142654,
+  "body_wide_sel": 0.4592253343192996,
+  "body_wide_sel_wide": 0.16438370911370523,
+  "body_dyn_write": 1.293269687780746,
+  "top_wide_bits": 1.6092761113964595,
+  "top_c_lane": 2.3489100321471352,
+  "shl_merge_bits": 0.6183956707705033
+ },
+ "top|Expression|FF": {},
+ "top|Multiplexer|LUT": {
+  "n_loops": 13.459372563928078,
+  "hoist_seq": 3.6915565754761,
+  "states": 2.8541850899821264,
+  "mem_arrays_banks": 40.297305895400434,
+  "shared_call_mux": 1.0386818918636334,
+  "mux_body": 0.18522946440149565,
+  "hoist_reg_bits": 0.13670126034836555
+ },
+ "top|Register|FF": {
+  "body_P": 6.51295963710819,
+  "body_P_fast": 6.807789287949558,
+  "top_cores": 54.86986376311849,
+  "top_wide_bits_fast": 1.126291745549977,
+  "top_c_word": 0.9584019863116283,
+  "states": 1.0,
+  "cnt_bits": 1.0,
+  "hoist_reg_bits": 1.0,
+  "shl_reg_bits": 1.0
+ },
+ "top|Register|LUT": {}
+}

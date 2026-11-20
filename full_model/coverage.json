@@ -1,0 +1,219 @@
+{
+ "single": {
+  "pipeline_loop": {
+   "k": 290,
+   "j": 166,
+   "none": 54
+  },
+  "pipeline_ii": {
+   "1": 340,
+   "2": 42,
+   "4": 42,
+   "8": 32,
+   "None": 54
+  },
+  "pipeline_style": {
+   "stp": 388,
+   "flp": 68,
+   "None": 54
+  },
+  "unroll_k": {
+   "1": 219,
+   "full": 171,
+   "2": 28,
+   "4": 26,
+   "8": 34,
+   "16": 13,
+   "32": 19
+  },
+  "unroll_j": {
+   "1": 406,
+   "2": 55,
+   "4": 49
+  },
+  "A_mode": {
+   "none": 380,
+   "partition": 85,
+   "reshape": 45
+  },
+  "A_type": {
+   "None": 380,
+   "cyclic": 64,
+   "block": 38,
+   "complete": 28
+  },
+  "A_dim": {
+   "None": 380,
+   "2": 91,
+   "1": 39
+  },
+  "A_factor": {
+   "None": 408,
+   "2": 21,
+   "4": 15,
+   "16": 13,
+   "32": 1,
+   "8": 52
+  },
+  "B_mode": {
+   "none": 383,
+   "partition": 83,
+   "reshape": 44
+  },
+  "B_type": {
+   "None": 383,
+   "cyclic": 74,
+   "block": 30,
+   "complete": 23
+  },
+  "B_dim": {
+   "None": 383,
+   "1": 88,
+   "2": 39
+  },
+  "B_factor": {
+   "None": 406,
+   "2": 18,
+   "4": 18,
+   "16": 15,
+   "32": 1,
+   "8": 52
+  },
+  "C_mode": {
+   "none": 404,
+   "partition": 58,
+   "reshape": 48
+  },
+  "C_type": {
+   "None": 404,
+   "cyclic": 40,
+   "block": 39,
+   "complete": 27
+  },
+  "C_dim": {
+   "None": 404,
+   "2": 64,
+   "1": 42
+  },
+  "C_factor": {
+   "None": 431,
+   "2": 21,
+   "4": 16,
+   "8": 14,
+   "16": 28
+  },
+  "A_storage": {
+   "default": 392,
+   "ram_1p": 54,
+   "ram_2p": 37,
+   "ram_t2p": 27
+  },
+  "B_storage": {
+   "default": 410,
+   "ram_1p": 42,
+   "ram_2p": 32,
+   "ram_t2p": 26
+  },
+  "A_storage_impl": {
+   "None": 392,
+   "auto": 48,
+   "bram": 42,
+   "lutram": 28
+  },
+  "B_storage_impl": {
+   "None": 410,
+   "auto": 39,
+   "bram": 34,
+   "lutram": 27
+  },
+  "fmul_impl": {
+   "fabric": 40,
+   "meddsp": 46,
+   "fulldsp": 45,
+   "maxdsp": 42,
+   "auto": 337
+  },
+  "fmul_latency": {
+   "auto": 28,
+   "1": 34,
+   "2": 36,
+   "3": 35,
+   "4": 40,
+   "None": 337
+  },
+  "fadd_impl": {
+   "auto": 367,
+   "fabric": 70,
+   "fulldsp": 73
+  },
+  "fadd_latency": {
+   "None": 367,
+   "auto": 55,
+   "1": 22,
+   "2": 20,
+   "3": 26,
+   "4": 20
+  },
+  "flatten": {
+   "auto": 452,
+   "off": 58
+  },
+  "clock_ns": {
+   "10.0": 281,
+   "5.0": 72,
+   "3.33": 69,
+   "2.5": 88
+  },
+  "unsafe_math": {
+   "False": 401,
+   "True": 109
+  }
+ },
+ "pair": {
+  "pipeline_loop|unroll_k": {
+   "k|1": 201,
+   "j|full": 166,
+   "k|2": 22,
+   "k|4": 21,
+   "k|8": 27,
+   "k|16": 8,
+   "k|32": 11,
+   "none|4": 5,
+   "none|8": 7,
+   "none|16": 5,
+   "none|32": 8,
+   "none|full": 5,
+   "none|1": 18,
+   "none|2": 6
+  },
+  "pipeline_loop|unroll_j": {
+   "k|1": 242,
+   "j|1": 137,
+   "k|2": 21,
+   "k|4": 27,
+   "none|1": 27,
+   "j|2": 19,
+   "none|2": 15,
+   "none|4": 12,
+   "j|4": 10
+  },
+  "pipeline_loop|pipeline_ii": {
+   "k|1": 235,
+   "k|2": 19,
+   "k|4": 21,
+   "k|8": 15,
+   "j|1": 105,
+   "j|2": 23,
+   "j|4": 21,
+   "j|8": 17,
+   "none|None": 54
+  },
+  "pipeline_loop|pipeline_style": {
+   "k|stp": 255,
+   "k|flp": 35,
+   "j|stp": 133,
+   "j|flp": 33,
+   "none|None": 54
+  }
+ }
+}
